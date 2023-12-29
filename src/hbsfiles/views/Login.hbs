@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        .body{
+             background-image: url("https://r4.wallpaperflare.com/wallpaper/307/184/920/ubuntu-linux-terminal-hacker-wallpaper-3f13574622d214245b2916d0d5d3101a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+        }
+        .login-container {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 20rem;
+            width: 15rem;
+            margin-top: 15rem;
+            background-color: rgba(3, 3, 3, 0.696);
+            
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        input {
+            /* Adjusted the border style */
+            border: 6px solid transparent;
+           
+        
+            border-radius: 5px;
+            /* Added a padding for better visual appearance */
+            padding: 5px;
+        }
+
+        input[type="password"] {
+            /* Adjusted the border style */
+            border: 5px solid transparent;
+            
+            border-radius: 6px;
+            
+            /* Added a padding for better visual appearance */
+            padding: 5px;
+        }
+
+        button {
+            padding: 3px;
+            width: 150px;
+            margin-top: 40px;
+            border-radius: 10px;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body class="body">
+    {{>nav}}
+    {{!---------------------------- main --------------------------}}
+    <main class="main">
+        <div class="login-container">
+            <h1 style="font-family: sans-serif; padding:10px; margin-bottom:30px; font-weight: 100; color:orange">Login</h1>
+            <form action="/Login" method="post">
+                <label for="email" style="font-family: sans-serif; color:aliceblue">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password" style="font-family: sans-serif; color:aliceblue ; margin-top:20px">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

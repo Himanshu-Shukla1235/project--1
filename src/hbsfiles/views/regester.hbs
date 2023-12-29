@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        .body{
+             background-image: url("https://r4.wallpaperflare.com/wallpaper/307/184/920/ubuntu-linux-terminal-hacker-wallpaper-3f13574622d214245b2916d0d5d3101a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+        }
+        .login-container {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40rem;
+            width: 30rem;
+            background-color: rgba(3, 3, 3, 0.696);
+
+        
+            
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        input {
+            /* Adjusted the border style */
+            border: 6px solid transparent;
+           width: 10rem;
+        
+            border-radius: 5px;
+            /* Added a padding for better visual appearance */
+            
+        }
+
+        input[type="password"] {
+            /* Adjusted the border style */
+            border: 5px solid transparent;
+            
+            border-radius: 6px;
+            
+            /* Added a padding for better visual appearance */
+            padding: 5px;
+        }
+
+        button {
+            padding: 3px;
+            width: 150px;
+            margin-top: 40px;
+            border-radius: 10px;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+     
+    </style>
+</head>
+<body class="body">
+    {{>nav}}
+    {{!---------------------------- main --------------------------}}
+    <main class="main">
+        <div class="login-container">
+            <h1 style="font-family: sans-serif; padding:10px; margin-bottom:30px; font-weight: 100; color:orange">SignUp</h1>
+            <form action="/signup" method="post" class="form">
+
+                <label for="name" style="font-family: sans-serif; color:aliceblue">name:</label>
+                <input type="txt" id="name" name="name" required>
+
+                <label for="email" style="font-family: sans-serif; color:aliceblue">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone" style="font-family: sans-serif; color:aliceblue">phone:</label>
+                <input type="phone" id="email" name="phone" required>
+
+                <label for="password" style="font-family: sans-serif; color:aliceblue ; ">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="password" style="font-family: sans-serif; color:aliceblue">Confirm Password:</label>
+                <input type="password" id="email" name="confirmpassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
