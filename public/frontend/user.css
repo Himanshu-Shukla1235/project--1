@@ -1,3 +1,69 @@
 .body{
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(253, 253, 253, 0.913);
+    height: auto;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2500px;
+    /* margin-top: 8rem; */
+    width: 100%;
+   overflow: hidden;
+   background-color: rgba(255, 255, 255, 0);
+    /* border: solid 3px white; */
+    /* overflow-x: hidden; */
+}
+.quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 200px;
+    width: 87rem;
+    margin-top: 10rem;
+    
+   
+   
+    /* border: solid 3px rgb(0, 0, 0); */
+}
+.will{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    height: 40rem;
+    width: 87rem;
+    background-color: black;
+    gap: 150px;
+    border-radius: 7px;
+}
+
+.will div{
+/* 
+    border: solid 3px white; */
+    height: 20rem;
+    width: 20rem;
+}
+.imgP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    height: 40rem;
+    width: 87rem;
+    background-image: url("") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-blend-mode: darken;
+    /* background-color: black; */
+    
 }

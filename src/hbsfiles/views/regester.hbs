@@ -39,19 +39,13 @@
            width: 10rem;
         
             border-radius: 5px;
+
+            overflow-x: hidden;
             /* Added a padding for better visual appearance */
             
         }
 
-        input[type="password"] {
-            /* Adjusted the border style */
-            border: 5px solid transparent;
-            
-            border-radius: 6px;
-            
-            /* Added a padding for better visual appearance */
-            padding: 5px;
-        }
+     
 
         button {
             padding: 3px;
@@ -86,9 +80,9 @@
                 <input type="password" id="password" name="password" required>
 
                 <label for="password" style="font-family: sans-serif; color:aliceblue">Confirm Password:</label>
-                <input type="password" id="email" name="confirmpassword" required>
+                <input type="password" id="password" name="confirmpassword" required>
 
-                <button type="submit">Login</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </main>

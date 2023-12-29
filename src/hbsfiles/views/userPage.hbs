@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>userPage</title>
     <link rel="stylesheet" href="user.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
 </head>
 <body class="body">
     {{>nav}}
+    <main class="main">
+        <div class="quote"  >
+            <h1 data-aos="fade-right"  style="width: 500px; color:rgb(0, 0, 0) ; font-size: 20px; font-family: sans-serif;   font-weight: 50; ">"Explore the Frontiers of Tomorrow's Science Today: Unleashing Innovations, Igniting Curiosity, and Redefining Possibilities!"
+
+           </h1>
+        </div>
+        <div class="will" data-aos="fade-left">
+            <div style="background-color: rgba(255, 166, 0, 0.961);border-radius:5px"></div>
+            <div style="background-color: rgba(255, 255, 255, 0.927);border-radius:5px"> </div>
+            <div style="background-color: aqua;border-radius:5px"></div>
+        </div>
+
+        <div class="imgP">
+            
+        </div>
+          
+  
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({offset: 300, 
+  delay: 0, 
+  duration: 1000, 
+  easing: 'ease', 
+  once: false, 
+  mirror: false, 
+  anchorPlacement: 'top-bottom',});
+  </script>
+
 </body>
 </html>
+

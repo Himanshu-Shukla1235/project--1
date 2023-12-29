@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const app = express();
+const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 
 const dbConnection = require("./db/connect/connect.js");
@@ -66,13 +67,16 @@ app.post("/Login", async (req, res) => {
 
     const dbUserData = await user.findOne({ email: loginData.email });
 
-    if (loginData.password === dbUserData.password) {
+    const ismatch = bcrypt.compare(loginData.password, dbUserData.password);
+    console.log(ismatch);
+
+    if (ismatch) {
       res.status(201).render("userPage");
-    }else{
-        return res.send("password incorrect")
+    } else {
+      return res.send("password incorrect");
     }
   } catch (e) {
-  return  res.status(400).send(e);
+    return res.status(400).send(e);
   }
 });
 
