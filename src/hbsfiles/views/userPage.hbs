@@ -5,40 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>userPage</title>
     <link rel="stylesheet" href="user.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
 </head>
 <body class="body">
+
+    {{!-- ------------------------------ Header --------------------------------- --}}
     {{>nav}}
+
+    {{!-- ------------------------------ Main ----------------------------------- --}}
     <main class="main">
-        <div class="quote"  >
-            <h1 data-aos="fade-right"  style="width: 500px; color:rgb(0, 0, 0) ; font-size: 20px; font-family: sans-serif;   font-weight: 50; ">"Explore the Frontiers of Tomorrow's Science Today: Unleashing Innovations, Igniting Curiosity, and Redefining Possibilities!"
+        <div class="quote">
+           <h1 id="quot" data-aos="fade-right" style="width: 500px; color: rgb(2, 2, 2); font-size: 20px; font-family: sans-serif; font-weight: 500;">
+           Explore the Frontiers of Tomorrow's Science Today: Unleashing Innovations, Igniting Curiosity, and Redefining Possibilities!
+        </h1>
 
-           </h1>
+        <i style="margin-left: 400px;font-size:200px " data-aos="zoom-in"  class="fa-solid fa-rocket"></i>
         </div>
+
+      <div class="willl"   data-aos="fade-right">
+       <h1 id="willl" data-aos="fade-right" style="width:1000px; color: rgb(255, 174, 0); font-size: 40px; font-family: sans-serif; font-weight: 500;">
+           Our Future Projects
+        </h1>
         <div class="will" data-aos="fade-left">
-            <div style="background-color: rgba(255, 166, 0, 0.961);border-radius:5px"></div>
-            <div style="background-color: rgba(255, 255, 255, 0.927);border-radius:5px"> </div>
-            <div style="background-color: aqua;border-radius:5px"></div>
-        </div>
-
+            
+            <div style="background-color: rgba(255, 166, 0, 0.961); border-radius: 5px;" data-aos="fade-right"><i class="fa-solid fa-robot" style="color: #000000;"></i></div>
+            <div style="background-color: rgba(255, 255, 255, 0.927); border-radius: 5px;" data-aos="fade-right"><i class="fa-solid fa-brain" style="color: #00eeff;"></i></div>
+            <div style="background-color: aqua; border-radius: 5px;" data-aos="fade-right"><i class="fa-solid fa-atom" style="color: #000000;"></i></div>
+             </div>
+        </div>  
         <div class="imgP">
             
         </div>
-          
-  
     </main>
-    <footer></footer>
+
+    {{!-- ---------------------------- Footer ----------------------------- --}}
+    {{>Footer}}
+
+    {{!-- ----------------------------- Script ---------------------------- --}}
+    <script src="userPage.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init({offset: 300, 
-  delay: 0, 
-  duration: 1000, 
-  easing: 'ease', 
-  once: false, 
-  mirror: false, 
-  anchorPlacement: 'top-bottom',});
-  </script>
-
+        AOS.init({
+            offset: 300, 
+            delay: 0, 
+            duration: 1000, 
+            easing: 'ease', 
+            once: false, 
+            mirror: false, 
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 </body>
 </html>
-
